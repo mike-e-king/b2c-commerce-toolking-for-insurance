@@ -1,0 +1,33 @@
+{
+    "name": "iFrame Embed Video",
+    "description": "Component to Embed a Video in an iFrame",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "video_details",
+        "name": "Video Details",
+        "attribute_definitions": [
+          {
+            "id": "embed_url",
+            "name": "Video Embed URL",
+            "type": "string",
+            "required": true
+          },
+          {
+            "id": "video_width",
+            "name": "Video Width",
+            "type": "string",
+            "required": true
+          },
+          {
+            "id": "video_height",
+            "name": "Video Height",
+            "type": "string",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "region_definitions": []
+  }
+  

@@ -1,0 +1,55 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/threeProductTile.css');
+</isscript>
+
+<style>
+    .tptImg{
+        width: 100%;
+        max-width: 100%;
+        border: none;
+    }
+</style>
+
+<div>
+    <div>
+        <a href="${pdict.imageLink}">
+            <source srcset="${pdict.imageHead.src.desktop}" media="(min-width: 768px)"/>
+            <img style="--focal-point-x:${pdict.imageHead.focalPointX}; 
+        --focal-point-y:${pdict.imageHead.focalPointY};" src="${pdict.imageHead.src.mobile}" class="tptImg" <isif condition="${pdict.imageHead.alt}">alt="${pdict.imageHead.alt}" title="${pdict.imageHead.alt}"</isif> />
+        </a>
+    </div>
+
+    <div class="product-group" >
+        <div class="product-item">
+            <img class="productImg" src="${pdict.product1.images.medium[0].url}" alt="${pdict.product1.productName}" title="${pdict.product1.images.medium[0].title}"/>
+            <div class="productNaming">
+                ${pdict.product1.productName}
+            </div>
+            <div class="productPricing">
+                <isset name="price" value="${pdict.product1.price}" scope="page" />
+                <isinclude template="experience/components/commerce_assets/product/pricing/main" />
+            </div>
+        </div>
+        <div class="product-item">
+            <img class="productImg" src="${pdict.product2.images.medium[0].url}" alt="${pdict.product2.productName}" title="${pdict.product2.images.medium[0].title}"/>
+            <div class="productNaming">
+                ${pdict.product2.productName}
+            </div>
+            <div class="productPricing">
+                <isset name="price" value="${pdict.product2.price}" scope="page" />
+                <isinclude template="experience/components/commerce_assets/product/pricing/main" />
+            </div>
+        </div>
+        <div class="product-item">
+            <img class="productImg" src="${pdict.product3.images.medium[0].url}" alt="${pdict.product3.productName}" title="${pdict.product3.images.medium[0].title}"/>
+            <div class="productNaming">
+                ${pdict.product3.productName}
+            </div>
+            <div class="productPricing">
+                <isset name="price" value="${pdict.product3.price}" scope="page" />
+                <isinclude template="experience/components/commerce_assets/product/pricing/main" />
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,94 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/appointmentBooker.css');
+    assets.addJs('/js/appointmentBooker.js');
+</isscript>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet"/>
+
+<script>
+    .containerFont{
+        font-family:${pdict.textFont};
+    }
+
+    .showBtn{
+        background-color:${pdict.btnColour};
+    }
+
+    .month-year{
+        background-color:${pdict.headColour};
+    }
+
+    .timepicker-container{
+        background-color: ${pdict.bgColour};
+    }
+</script>
+
+<div class="containerFont">
+
+    <div id="booking-btn" class="booking-btn">
+        <button class="showBtn" onclick="displayDatePicker('${pdict.textColour}','${pdict.datePassedColour}','${pdict.bgColour}','${pdict.dateColour}','${pdict.selectedDateColour}','${pdict.selectedDateTextColour}','${pdict.daysTextColour}')">
+            ${pdict.openCalButtonText}
+        </button>
+    </div>
+
+    <div id="booker-container" class="booker-container">
+        <div id="datepicker-container" class="datepicker-container" style="display:none">
+
+            <div class="datepicker-title">
+
+                <div class="month-year">
+                    <a class="month-arrows" onclick="lastMonth()" title="Prev">
+                        <span class="fa fa-angle-left"></span>
+                    </a>
+                    <span class="month-text" id="monthAndYear"></span>
+                    <a class="month-arrows" onclick="nextMonth()" title="Next">
+                        <span class="fa fa-angle-right"></span>
+                    </a>
+                </div>
+            </div>
+            <table class="datepicker-tbl">
+                <thead class="datepicker-head">
+                    <tr>
+                        <th style="padding-bottom: 8px;">Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="datepicker-body" class="datepicker-body">   
+                </tbody>
+            </table>
+        </div>
+
+        <div id="timepicker" class="timepicker" style="display:none">
+            <div class="arrow-up"></div>
+            <div class="timepicker-container">
+                <div class="timpepicker-header">
+                    Available Times
+                </div>
+                <div id="timepicker-body" class="timepicker-body">
+                </div>
+            </div>
+        </div>
+
+        <div id="time-confirmation" class="confirmation-popup" style="display:none;">
+            <div class="time-confirmation-info">
+                Are you sure you want to book for <span id="book-date"></span> at <span id="book-time"></span>?
+                <div>
+                    <button class="showBtn" onclick="confirmBooking()">Confirm</button>
+                    <button class="showBtn" onclick="closePopup()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="booking-confirmation" class="booking-confirmation" style="display:none;">
+        <div class="booking-confirmation-info">
+            ${pdict.confirmText1} <span id="booked-date"></span> at <span id="booked-time"></span>. ${pdict.confirmText2}
+        </div>
+    </div>
+</div>

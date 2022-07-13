@@ -1,0 +1,27 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/3columnAdjustable.css');
+</isscript>
+<style>
+    .region_square:before {
+        padding-top: 0;
+    }
+</style>
+
+<div class="row mx-n2" >
+    <div class="mobileWidthOverride" style="flex: 0 0 ${pdict.col1Width};max-width: ${pdict.col1Width};width: ${pdict.col1Width};">
+        <isprint value="${pdict.regions.column1.setClassName("region region_square px-2").render()}" encoding="off"/>
+    </div>
+    <div class="mobileWidthOverride" style="flex: 0 0 ${pdict.col2Width};max-width: ${pdict.col2Width};width: ${pdict.col2Width};">
+        <isprint value="${pdict.regions.column2.setClassName("region region_square px-2").render()}" encoding="off"/>
+    </div>
+    <div class="mobileWidthOverride" style="flex: 0 0 ${pdict.col3Width};max-width: ${pdict.col3Width};width: ${pdict.col3Width};">
+        <isprint value="${pdict.regions.column3.setClassName("region region_square px-2").render()}" encoding="off"/>
+    </div>
+    <div class="mobileWidthOverride" style="flex: 0 0 ${pdict.col4Width};max-width: ${pdict.col4Width};width: ${pdict.col4Width};">
+        <isprint value="${pdict.regions.column4.setClassName("region region_square px-2").render()}" encoding="off"/>
+    </div>
+    <div class="mobileWidthOverride" style="flex: 0 0 ${pdict.col5Width};max-width: ${pdict.col5Width};width: ${pdict.col5Width};">
+        <isprint value="${pdict.regions.column5.setClassName("region region_square px-2").render()}" encoding="off"/>
+    </div>
+</div>

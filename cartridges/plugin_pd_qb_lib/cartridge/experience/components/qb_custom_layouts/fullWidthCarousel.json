@@ -1,0 +1,12 @@
+{
+  "name": "Full Width Carousel",
+  "group": "qb_custom_layouts",
+  "attribute_definition_groups": [],
+  "region_definitions": [
+      {
+        "id":"slides",
+        "name":"Slides",
+        "component_type_exclusions": []
+      }
+  ]
+}

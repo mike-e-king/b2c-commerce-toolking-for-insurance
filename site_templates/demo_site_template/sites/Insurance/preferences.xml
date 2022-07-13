@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
+    <standard-preferences>
+        <all-instances>
+            <preference preference-id="AddProductToBasketBehavior">AllowRepeats</preference>
+            <preference preference-id="SiteCatalog">Insurance_Catalog</preference>
+            <preference preference-id="SiteCurrencies">USD:EUR:JPY:CNY</preference>
+            <preference preference-id="SiteCustomerList">Insurance</preference>
+            <preference preference-id="SiteDefaultLocale">en_US</preference>
+            <preference preference-id="SiteInventoryList">InsuranceInventory</preference>
+            <preference preference-id="SiteLibrary">InsuranceSharedLibrary</preference>
+            <preference preference-id="SiteLocales">default:en_US</preference>
+            <preference preference-id="SitePriceBooks">VlocityPricebook</preference>
+            <preference preference-id="StorefrontURLsEnabled">true</preference>
+        </all-instances>
+    </standard-preferences>
+</preferences>

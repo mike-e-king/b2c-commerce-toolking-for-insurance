@@ -1,0 +1,80 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/personalise.css');  
+    assets.addJs('/js/personalise.js');
+</isscript>
+
+<style>
+    .text-overlay{
+        color:${pdict.colour1};
+        top: ${pdict.textTop}%;
+        left: ${pdict.textLeft}%;
+        transform: rotate(${pdict.textRotation}deg);
+        font-size: ${pdict.fontSize};
+        font-family: ${pdict.fontStyle};
+    }
+
+    .personaliser-column{
+        font-family:${pdict.bodyFontStyle};
+        font-size:${pdict.bodyFontSize};
+    }
+
+    .color-swatch1{
+        background-color: ${pdict.colour1};
+    }
+
+    .color-swatch2{
+        background-color: ${pdict.colour2};
+    }
+
+    .color-swatch3{
+        background-color: ${pdict.colour3};
+    }
+
+    .color-swatch4{
+        background-color: ${pdict.colour4};
+    }
+
+    .personaliseBtn{
+        margin-left: 6%;
+        margin-top: 10%;
+    }
+</style>
+
+<div id="personaliser" class="personaliser-main row">
+    <div class="row personaliser-pad">
+        <div id="personaliser-msg"></div>
+
+        <div class="image_column">
+            <div id="text-overlay" class="text-overlay"></div>
+            <img class="personaliser-img" alt="image" src="${pdict.productImage.src}" />
+        </div>
+
+        <div class="personaliser-column">
+            <div>
+                Select your thread colour: 
+                <ul class="color-swatches">
+                    <li class="color-swatch pointer color-swatch1" onclick="selectColour('${pdict.colour1}')"></li>
+                    <li class="color-swatch pointer color-swatch2" onclick="selectColour('${pdict.colour2}')"></li>
+                    <li class="color-swatch pointer color-swatch3" onclick="selectColour('${pdict.colour3}')"></li>
+                    <li class="color-swatch pointer color-swatch4" onclick="selectColour('${pdict.colour4}')"></li>
+                </ul>
+
+            </div>
+            <div class="enterText">
+                Enter your text: 
+                <div id="personaliser-msg-error"></div>
+            </div>
+            <div>
+                <input class="input-text persMess personalise-input" id="personalise_productmessage" type="text" name="personalise_productmessage" value="" maxlength="15" onkeyup="typeText(this.value);"/>
+            </div>
+            <div class="infoText">
+                Enter up to 15 characters
+            </div>
+            <div class="row cart-and-ipay">  
+                <input id="personalise-submit" type="button" name="submit" class="btn btn-primary personaliseBtn" value="Add to Cart" onclick="addToCartPersonalisedBtn('${URLUtils.https('Personalise-Add')}','${pdict.productId}')"/>             
+            </div>
+        </div>
+    </div>
+</div>
+

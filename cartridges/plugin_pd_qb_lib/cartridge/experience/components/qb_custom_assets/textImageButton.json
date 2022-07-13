@@ -1,0 +1,213 @@
+{
+    "name": "Text with Image and Button",
+    "description": "Component to show Text with Image and/or a Button",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "text__details",
+        "name": "Text Details",
+        "attribute_definitions": [
+            {
+                "id": "show_text",
+                "name": "Show Text",
+                "type": "boolean",
+                "required": false
+            },
+            {
+                "id": "text_header",
+                "name": "Text Header",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "text_header_type",
+                "name": "Text Header Type- h1, h2, h3",
+                "description": "Defaults to h1",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_body",
+                "name": "Text Body",
+                "type": "markup",
+                "required": false
+            },
+            {
+                "id": "text_colour",
+                "name": "Text Colour",
+                "description": "Defaults to body default colour",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_font_weight",
+                "name": "Body Text Font Weight",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_size",
+                "name": "Body Text Size",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_align",
+                "name": "Text Alignment",
+                "description": "Defaults to center",
+                "type": "enum",
+                "values": [
+                    "Left",
+                    "Center",
+                    "Right"
+                ],
+                "default_value": "Center",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "button__details",
+        "name": "Button Details",
+        "attribute_definitions": [
+            {
+                "id": "show_button",
+                "name": "Show Button",
+                "type": "boolean",
+                "required": false
+            },
+            {
+                "id": "button_url",
+                "name": "Button URL",
+                "type": "url",
+                "required": false
+            },
+            {
+                "id": "button_text",
+                "name": "Button Text",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "button_text_colour",
+                "name": "Button Text Colour",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "button_colour",
+                "name": "Button Colour",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "button_text_size",
+                "name": "Button Text Size",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "button_padding",
+                "name": "Button Padding",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "button_align",
+                "name": "Button Alignment",
+                "type": "enum",
+                "values": [
+                    "Left",
+                    "Center",
+                    "Right"
+                ],
+                "default_value": "Center",
+                "description": "Defaults to Center",
+                "required": false
+            },
+            {
+                "id": "border_radius",
+                "name": "Button Border Radius",
+                "type": "string",
+                "description": "Rounding of edges for button- 0 for square button",
+                "required": false
+            },
+            {
+                "id": "button_border",
+                "name": "Button Border Style",
+                "type": "string",
+                "description": "Colour and weight of button border eg. '2px solid black'",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "image__details",
+        "name": "Image Details",
+        "attribute_definitions": [
+            {
+                "id": "show_pic_top",
+                "name": "Show Image Above Text",
+                "type": "boolean",
+                "required": false
+            },
+            {
+                "id": "show_pic_middle",
+                "name": "Show Image Between Text and Button",
+                "type": "boolean",
+                "required": false
+            },
+            {
+                "id": "image1",
+                "name": "Image 1",
+                "type": "image",
+                "required": false
+            },
+            {
+                "id": "image2_url",
+                "name": "Image 2 URL",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "image3_url",
+                "name": "Image 3 URL",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "image_height",
+                "name": "Image Height",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "image_width",
+                "name": "Image Width",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "img_border_radius",
+                "name": "Image 1 Border Radius",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "img_top_align",
+                "name": "Image Alignment",
+                "description": "Defaults to Center",
+                "type": "enum",
+                "values": [
+                    "Left",
+                    "Center",
+                    "Right"
+                ],
+                "default_value": "Center",
+                "required": false
+            }
+        ]
+      }
+    ],
+    "region_definitions": []
+}

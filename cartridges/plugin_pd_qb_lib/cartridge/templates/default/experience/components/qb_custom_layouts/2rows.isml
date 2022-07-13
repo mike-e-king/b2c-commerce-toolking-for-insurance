@@ -1,0 +1,8 @@
+<div class="">
+    <isprint value="${pdict.regions.row1.setClassName("").render()}" encoding="off"/>
+    <isprint value="${pdict.regions.row2.setClassName("").render()}" encoding="off"/>
+</div>
+
+
+
+

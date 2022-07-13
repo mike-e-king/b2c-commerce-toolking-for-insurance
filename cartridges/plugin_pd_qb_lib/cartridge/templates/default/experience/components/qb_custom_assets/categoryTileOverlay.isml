@@ -1,0 +1,26 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/categoryTileOverlay.css');
+</isscript>
+
+<a href="${pdict.linkUrl}">
+    <div class="tibContainer" style="
+                                    background-image:url(${pdict.image.src.desktop});
+                                    background-size: cover;
+                                    height:${pdict.imageHeight};
+                                    width:${pdict.imageWidth};">
+
+        <div class="circleOverlay" style="
+                                    max-width: ${pdict.circleWidth};
+                                    width: ${pdict.circleWidth};
+                                    height: ${pdict.circleWidth};
+                                    background-color: ${pdict.textBgColour};
+                                    font-size:${pdict.textSize};
+                                    color:${pdict.textColour};
+                                    padding-top:${pdict.textPad};
+                                    text-align: ${pdict.textAlign};"
+                                    >
+            <isprint value="${pdict.text}" encoding="off"/>
+        </div>
+    </div>
+</a>

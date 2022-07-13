@@ -1,0 +1,116 @@
+{
+  "name": "Personalisation Asset",
+  "description": "Component to add personalisation to products",
+  "group": "qb_custom_assets",
+  "attribute_definition_groups": [
+    {
+      "id": "personaliseSettings",
+      "name": "Personalise",
+      "description": "Personaliser Settings",
+      "attribute_definitions": [
+        {
+          "id": "product",
+          "name": "Product",
+	        "description": "Select the product SKU to be displayed.",
+          "type": "product",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "bodyTextOptions",
+      "name": "Main Body Text Options",
+      "description": "The options to style the text on the main body of the component.",
+      "attribute_definitions": [
+        {
+          "id": "body_font_style",
+          "name": "Main Text Font",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "body_font_size",
+          "name": "Main Text Font Size",
+          "type": "string",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "colourOptions",
+      "name": "Colour Options",
+      "description": "The text colour options.",
+      "attribute_definitions": [
+        {
+          "id": "colour_1",
+          "name": "Colour 1",
+          "description": "Defaults to black",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "colour_2",
+          "name": "Colour 2",
+          "description": "Defaults to red",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "colour_3",
+          "name": "Colour 3",
+          "description": "Defaults to blue",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "colour_4",
+          "name": "Colour 4",
+          "description": "Defaults to green",
+          "type": "string",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "textOptions",
+      "name": "Product Overlay Text Options",
+      "description": "The text options to style the text.",
+      "attribute_definitions": [
+        {
+          "id": "font_style",
+          "name": "Product Overlay Text Font",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "font_size",
+          "name": "Product Overlay Text Font Size",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "text_rotation",
+          "name": "Product Overlay Text Rotation",
+          "description": "Number of degrees to rotate the text to align it to product image",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "text_left",
+          "name": "Product Overlay Text Left (%) Position",
+          "description": "Percentage left to align the text to the product image- defaults to 25",
+          "type": "string",
+          "required": false
+        },
+        {
+          "id": "text_top",
+          "name": "Product Overlay Text Top (%) Position",
+          "description": "Percentage top to align the text to the product image- defaults to 50",
+          "type": "string",
+          "required": false
+        }
+      ]
+    }    
+  ],
+  "region_definitions": []
+}

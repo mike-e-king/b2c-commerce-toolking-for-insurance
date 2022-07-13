@@ -1,0 +1,17 @@
+<style>
+    .tisContainer{
+        display:flex;
+        flex-direction:column;
+    }
+</style>
+
+<div class="tisContainer">
+    <div>
+        <source srcset="${pdict.imageTop.src.desktop}" media="(min-width: 768px)"/>
+        <img src="${pdict.imageTop.src.mobile}" style="border: none;--focal-point-x:${pdict.imageTop.focalPointX}; --focal-point-y:${pdict.imageTop.focalPointY}" <isif condition="${pdict.imageTop.alt}">alt="${pdict.imageTop.alt}" title="${pdict.imageTop.alt}"</isif> />
+    </div>
+    <div>
+        <source srcset="${pdict.imageBottom.src.desktop}" media="(min-width: 768px)"/>
+        <img src="${pdict.imageBottom.src.mobile}" style="border: none;--focal-point-x:${pdict.imageBottom.focalPointX}; --focal-point-y:${pdict.imageBottom.focalPointY}" <isif condition="${pdict.imageBottom.alt}">alt="${pdict.imageBottom.alt}" title="${pdict.imageBottom.alt}"</isif> />
+    </div>
+</div>

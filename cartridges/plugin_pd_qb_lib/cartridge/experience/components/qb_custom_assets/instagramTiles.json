@@ -1,0 +1,92 @@
+{
+    "name": "Instagram Tiles",
+    "description": "Component to simulate Instagram content",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "header_detail",
+            "name": "Header Details",
+            "attribute_definitions": [
+                {
+                    "id": "show_header",
+                    "name": "Show Header",
+                    "type": "boolean",
+                    "required": false
+                },
+                {
+                    "id": "hashtag",
+                    "name": "Your Hashtag eg. #ALPINEGROUP",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "insta_profile",
+                    "name": "Instagram Profile",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "highlight_colour",
+                    "name": "Text Highlight Colour",
+                    "type": "text",
+                    "required": false
+                }
+            ]
+        },
+        {
+        "id": "image_detail",
+        "name": "Image Details",
+        "attribute_definitions": [
+            {
+                "id": "image_1",
+                "name": "Image 1 URL",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "image_2",
+                "name": "Image 2 URL",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "image_3",
+                "name": "Image 3 URL",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "image_4",
+                "name": "Image 4 URL",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "image_5",
+                "name": "Image 5 URL",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "image_6",
+                "name": "Image 6 URL",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "image_7",
+                "name": "Image 7 URL",
+                "type": "string",
+                "required": true
+            },
+            {
+                "id": "content_link",
+                "name": "Content Link",
+                "type": "url",
+                "required": false
+            }
+        ]
+      }
+    ],
+    "region_definitions": []
+}

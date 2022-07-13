@@ -1,0 +1,17 @@
+{
+  "name": "2 Rows inside a Column",
+  "group": "qb_custom_layouts",
+  "attribute_definition_groups": [],
+  "region_definitions": [
+      {
+        "id":"row1",
+        "name":"Row 1",
+        "max_components":1
+      },
+      {
+        "id":"row2",
+        "name":"Row 2",
+        "max_components":1
+      }
+  ]
+}

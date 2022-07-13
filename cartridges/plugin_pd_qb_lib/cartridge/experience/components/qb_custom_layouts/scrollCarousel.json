@@ -1,0 +1,25 @@
+{
+  "name": "Scroll Carousel",
+  "group": "qb_custom_layouts",
+  "attribute_definition_groups": [
+      {
+        "id": "scroll_details",
+        "name": "Scroll Details",
+        "attribute_definitions": [
+          {
+            "id": "scroll_interval",
+            "name": "Scroll Interval in Milliseconds (default 5000 i.e. 5 seconds)",
+            "type": "text",
+            "required": false
+          }
+        ]
+      }
+    ],
+  "region_definitions": [
+      {
+        "id":"slides",
+        "name":"Slides",
+        "component_type_exclusions": []
+      }
+  ]
+}

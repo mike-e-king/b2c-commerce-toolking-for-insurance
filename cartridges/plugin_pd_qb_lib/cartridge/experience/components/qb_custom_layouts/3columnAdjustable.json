@@ -1,0 +1,47 @@
+{
+  "name": "1 Row, 3 Column, Adjustable width",
+  "group": "qb_custom_layouts",
+  "attribute_definition_groups": [
+    {
+      "id": "width_details",
+      "name": "Column Width Details",
+      "attribute_definitions": [
+        {
+          "id": "col1_width",
+          "name": "Column 1 Width",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": "col2_width",
+          "name": "Column 2 Width",
+          "type": "string",
+          "required": true
+        },
+        {
+          "id": "col3_width",
+          "name": "Column 3 Width",
+          "type": "string",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "region_definitions": [
+      {
+        "id":"column1",
+        "name":"Column 1",
+        "max_components":1
+      },
+      {
+        "id":"column2",
+        "name":"Column 2",
+        "max_components":1
+      },
+      {
+        "id":"column3",
+        "name":"Column 3",
+        "max_components":1
+      }
+  ]
+}

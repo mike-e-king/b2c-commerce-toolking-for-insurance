@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <script>
+            window.parent.sfdccredentials = {
+                accessToken: '${pdict.accessToken}',
+                instanceURL: '${pdict.instanceURL}'
+            };
+        </script>
+                
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/setting.js')}" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            // Custom settings
+ 
+    // NOTE: modify CONNECTED_APP_CONSUMER_KEY to the key of your own Connected App
+    var CONNECTED_APP_CONSUMER_KEY = '${pdict.consumerKey}';
+    // NOTE: modify SFDC_NAMESPACE to the name space of the Saleforce/Vlocity package you want to invoke, for example, vlocity_cmt
+    var SFDC_NAMESPACE = '${pdict.sfdcNamespace}';
+    // modify SCRIPT_DEF_PATH to change the local script def storage path
+    var SCRIPT_DEF_PATH = '${pdict.scriptDefPath}';
+    // modify ADDITIONAL_ANGULAR_SVS_INJECT to load extra angular services, array of strings
+    var ADDITIONAL_ANGULAR_SVS_INJECT = [];
+    // when this flag is true, omniscript will always try to use a local definition even when a forceng connection is live
+    window.forceLocalDef = ${pdict.forceLocalDef};
+    // when this flag is true, omniscript will call to salesforce on local script load with a connection for extra user info userName, userCurrencyCode, userTimzeZone, userProfile, timeStamp
+    window.callUserInfo = false;
+
+    // reset SFDC Connected App Consumer Key
+    window.VOmniSetConnectedAppKey(CONNECTED_APP_CONSUMER_KEY);
+
+    // reset SFDC package name space
+    window.VOmniSetNameSpace(SFDC_NAMESPACE);
+
+
+    // use the following to add more custom labels
+    // please make sure the custom label key does not conflict with OOTB SFDC custom labels
+    // (refer to setting.js)
+    window.VOmniAddMoreCustomLabels({});
+
+    // use the following to change the default script def path, for example, on AEM, it should be
+    // AEM digital assets management folder: '/content/dam/oout/scripts/'
+    window.VOmniSetScriptDefPath(SCRIPT_DEF_PATH);
+
+    // load additional angular services
+    window.VOmniCustomServicesToInject(ADDITIONAL_ANGULAR_SVS_INJECT);
+
+        </script>
+            
+        <link rel="stylesheet"
+              type="text/css"
+              href="${URLUtils.staticURL('omniout/assets/fmwk/css/salesforce-lightning-design-system-vf.min.css')}">
+        <link rel="stylesheet"
+              type="text/css"
+              href="${URLUtils.staticURL('omniout/assets/fmwk/css/OmniScriptOuiSldsCss.css')}">
+        <link rel="stylesheet"
+              type="text/css"
+              href="${URLUtils.staticURL('omniout/assets/fmwk/css/vlocityouislds.css')}">
+
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/vlocity_core_assets.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/angular_strap_bundle_1_6.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/OmniScriptLPThirdParty.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/VlocityPdf.min.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/VlocityExpressionEngine.min.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/ViaDirectives.min.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/VlocityDynamicForm.min.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/SldsAngular.min.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/BusinessProcessJS.min.js')}" type="text/javascript"></script>
+        <script src="${URLUtils.staticURL('omniout/js/fmwk/BusinessProcessSLDSTemplates.min.js')}" type="text/javascript"></script>
+
+        <script>
+            angular.module('miniApp', ["forceng", "vlocity-business-process"])
+                .controller('ContactListCtrl', function ($scope, force, $location) {
+                    force.init({
+                        accessToken: '${pdict.accessToken}',
+                        instanceURL: '${pdict.instanceURL}',
+                        useProxy: false
+                    });
+                    
+                    window.location.hash = '${pdict.pageHash}';
+                });
+        </script>
+
+    </head>
+
+    <body ng-app="miniApp">
+        <div ng-controller="ContactListCtrl"
+             class='vlocity via-slds via-omni'
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            
+            <div id='VlocityBP'>
+                <div ng-if='scriptNotFound1 || scriptNotFound2'
+                     ng-include="'vlcSldsScriptNotFound.html'"></div>
+                <div class="mask vlc-slds-mask"
+                     ng-show="loading">
+                    <div class="center-block spinner"
+                         vlc-slds-spinner="test"></div>
+                </div>
+                <ng-view id='VlocityBPView'
+                         autoscroll="true">
+                </ng-view>
+                <div ng-show='loading'
+                     class='modal-backdrop fade in'></div>
+            </div>
+        </div>
+    </body>
+</html>

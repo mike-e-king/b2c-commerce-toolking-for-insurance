@@ -1,0 +1,1 @@
+<iframe src="${pdict.embedUrl}" width="${pdict.videoWidth}" height="${pdict.videoHeight}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

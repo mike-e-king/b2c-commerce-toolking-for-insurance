@@ -1,0 +1,162 @@
+.booking-btn{
+    text-align: center;
+}
+
+.showBtn{
+    padding: 5%;
+    margin-top: 5% !important;
+}
+
+.booker-container{
+    padding: 2rem;
+}
+
+.datepicker-container{
+    width: 100%;
+    padding: 5%;
+    border: 0.5px solid #ccc;
+}
+
+.datepicker-title{
+    text-align:center;
+}
+
+.month-year{
+    display:flex;
+    padding: 0.8rem 0;
+}
+
+.month-arrows{
+    flex: 0 0 10%;
+    font-size: 1.5rem;
+}
+
+.month-text{
+    flex: 0 0 80%;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.datepicker-tbl{
+    width: 96%;
+    margin: 2% 2% 0 2%;
+    text-align: center;
+}
+
+.datepicker-head{
+    text-transform: uppercase;
+}
+
+.dp-date{
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.dp-no-date{
+    height: 4rem;
+    width: 3rem;
+}
+
+.dp-date-passed{
+    cursor: default;
+}
+
+.timepicker{
+    margin-top: 0.3rem
+}
+
+.timepicker-container{
+    width: 100%;
+    padding: 5%;
+    border: 0.5px solid #ccc;
+}
+
+.timpepicker-header{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-bottom: 0.5rem;
+}
+
+.timepicker-body{
+    display: flex;
+}
+
+.timepicker-time{
+    height: 3rem;
+    text-align: center;
+    width: 5rem;
+    cursor: pointer;
+    padding-top: 0.8rem;
+    margin: 0.2rem 0.5rem;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid #ccc;
+    position: relative;
+    margin-left: 45%;
+}
+
+.arrow-up:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -24px;
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+}
+
+.confirmation-popup{
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.time-confirmation-info{
+    height: 24%;
+    width: 30%;
+    margin: 8% 36%;
+    padding: 3% 4% 7% 4%;
+}
+
+.booking-confirmation-info{
+    padding: 10% 7%;
+}
+
+/* set margin-top to -50% to offset the ":before {padding-top: calc(1 / 2 * 100%);}" on the standard components */
+.experience-component.experience-qb_custom_assets-appointmentBooker{
+    position:unset;
+    /*margin-top: -50%;*/
+}
+
+.region_square .experience-component.experience-qb_custom_assets-appointmentBooker{
+    /*position:unset;
+    margin-top: -100%;*/
+}
+
+@media (max-width: 991.98px){
+    .booker-container {
+        padding: 1rem;
+    }
+    
+    .time-confirmation-info {
+        width: 72%;
+        margin: 60% 15%;
+        padding: 9% 4% 7% 4%;
+    }
+}

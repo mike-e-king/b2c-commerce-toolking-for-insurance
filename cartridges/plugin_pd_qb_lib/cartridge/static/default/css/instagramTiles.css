@@ -1,0 +1,98 @@
+.experience-qb_custom_assets-instagramTiles h3 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #bbc; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+.experience-qb_custom_assets-instagramTiles h3 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.headerText{
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.headerTitle{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.instaLogo{
+    max-width: 3rem;
+    margin-left: 1rem;    
+    position: absolute; 
+    right: 1rem; 
+    top: 2rem;
+}
+
+.tilesContainer{
+    display:flex;
+    width: 100%;
+}
+
+.colGroup1{
+    width: 50%;
+    display: flex;
+}
+
+.colGroup2{
+    width: 30%;
+    display: flex;
+}
+
+.colGroup3{
+    width: 20%;
+}
+
+.col1,
+.col2{
+    width: 50%;
+    padding: 0.2rem;
+}
+
+.col3,
+.col4{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.col5{
+    width: 100%;
+    padding: 0.2rem;
+}
+
+.tilesContainer img{
+    width:100%;
+    height: 19rem;
+}
+
+.tilesContainer .stackedImg{
+    padding: 0.2rem;
+    height: 9.7rem;
+}
+
+@media (max-width: 991.98px){
+    .tilesContainer{
+        flex-direction: column;
+    }
+
+    .colGroup1,
+    .colGroup2{
+        width: 100%;
+    }
+
+    .instaLogo,
+    .colGroup3{
+        display:none;
+    }
+
+    .tilesContainer .stackedImg {
+        height: auto;
+    }
+}

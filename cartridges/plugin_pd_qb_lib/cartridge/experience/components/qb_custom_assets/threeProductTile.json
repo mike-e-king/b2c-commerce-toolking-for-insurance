@@ -1,0 +1,50 @@
+{
+    "name": "Three Product Tile",
+    "description": "Component to displaying 3 Products with Image",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "image__details",
+        "name": "Image Details",
+        "attribute_definitions": [
+            {
+                "id": "image",
+                "name": "Image",
+                "type": "image",
+                "required": true
+            },
+            {
+                "id": "image_link",
+                "name": "Image Link",
+                "type": "url",
+                "required": true
+            }
+        ]
+      },
+      {
+        "id": "product__details",
+        "name": "Product Details",
+        "attribute_definitions": [
+            {
+                "id": "product1",
+                "name": "Product 1",
+                "type": "product",
+                "required": true
+            },
+            {
+                "id": "product2",
+                "name": "Product 2",
+                "type": "product",
+                "required": true
+            },
+            {
+                "id": "product3",
+                "name": "Product 3",
+                "type": "product",
+                "required": true
+            }
+        ]
+      }
+    ],
+    "region_definitions": []
+}

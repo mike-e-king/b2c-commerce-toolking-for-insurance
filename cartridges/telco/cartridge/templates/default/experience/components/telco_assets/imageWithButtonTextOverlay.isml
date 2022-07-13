@@ -1,0 +1,62 @@
+<style>
+    .videoBg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .ibtoContainer{
+        padding:1rem;
+        position: relative;
+        background-size: cover;
+        height:100%;
+    }
+
+    @media (max-width: 991.98px){
+        .ibtoOuter{
+            height: auto !important;
+        }
+    }
+</style>
+
+<div class="ibtoOuter" style="height:${pdict.bg_height}">
+    <div class="videoBg" style="display:${pdict.showVideo};">
+        <video width="100%" height="100%" muted loop autoplay>
+        <source src="${pdict.videoUrl}" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="ibtoContainer" style="
+                                    background-image:url(${pdict.image.src.desktop});
+                                    border-radius: ${pdict.imageBorderRadius};
+                                    width:${pdict.imageWidth};">
+
+        <div class="container">
+            <div class="richText" style="
+                                        display:${pdict.textDisplay};
+                                        font-size:${pdict.textSize};
+                                        font-weight:${pdict.textFontWeight};
+                                        color:${pdict.textColour};
+                                        text-align: ${pdict.textAlign};
+                                        max-width: ${pdict.textMaxWidth};
+                                        float: ${pdict.textFloat};
+                                        background: ${pdict.textBg};
+                                        margin: ${pdict.textMargin};">
+                <${pdict.textHeaderType} style="display:${pdict.textDisplayHeader};padding-top:${pdict.textTopPad};">
+                    ${pdict.textHeader}
+                </${pdict.textHeaderType}>
+                <div class="tibTextBody" style="display:${pdict.textDisplayBody}">
+                    <isprint value="${pdict.textBody}" encoding="off"/>
+                </div>
+            </div>
+
+            <div class="btnContainer" style="display:${pdict.buttonDisplay};margin-left: ${pdict.buttonMarginLeft};text-align:${pdict.buttonAlign}">
+                <a href="${pdict.buttonURL}">
+                    <div class="btn" style="text-align:${pdict.buttonTextAlign};margin-top: ${pdict.buttonMarginTop};border-radius:${pdict.buttonBorderRad};background-color:${pdict.buttonColour};font-size:${pdict.buttonTextSize};color:${pdict.buttonTextColour};padding:${pdict.buttonPadding}">
+                        ${pdict.buttonText}
+                    </div> 
+                </a>   
+            </div>
+        </div>
+    </div>
+</div>

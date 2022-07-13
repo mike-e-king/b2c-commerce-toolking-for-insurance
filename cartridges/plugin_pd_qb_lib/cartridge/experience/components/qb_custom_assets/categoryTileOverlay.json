@@ -1,0 +1,100 @@
+{
+    "name": "Category Image with Text Overlay",
+    "description": "Component to show Category Image with Text Overlay",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "text__details",
+        "name": "Text Details",
+        "attribute_definitions": [
+            {
+                "id": "text",
+                "name": "Text",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "text_colour",
+                "name": "Text Colour",
+                "description": "Defaults to body default colour",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_size",
+                "name": "Text Size",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_align",
+                "name": "Text Alignment",
+                "description": "Defaults to center",
+                "type": "enum",
+                "values": [
+                    "Left",
+                    "Center",
+                    "Right"
+                ],
+                "default_value": "Center",
+                "required": false
+            },{
+                "id": "text_pad",
+                "name": "Text Top Padding",
+                "description": "Use to vertically align your text in the overlay circle",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "circle_width",
+                "name": "Circle Overlay Width",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_bg_colour",
+                "name": "Circle Overlay Background Colour",
+                "type": "string",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "link__details",
+        "name": "Link Details",
+        "attribute_definitions": [
+            {
+                "id": "link_url",
+                "name": "Link",
+                "type": "url",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "image__details",
+        "name": "Image Details",
+        "attribute_definitions": [
+            {
+                "id": "image",
+                "name": "Image",
+                "type": "image",
+                "required": true
+            },
+            {
+                "id": "image_height",
+                "name": "Image Height",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "image_width",
+                "name": "Image Width",
+                "type": "string",
+                "required": false
+            }
+        ]
+      }
+    ],
+    "region_definitions": []
+}

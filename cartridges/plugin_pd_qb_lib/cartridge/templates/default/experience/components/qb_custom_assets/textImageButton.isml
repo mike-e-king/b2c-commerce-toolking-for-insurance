@@ -1,0 +1,40 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/textImageButton.css');
+</isscript>
+
+<div class="tibContainer" style="padding:1rem 0;">
+    <div class="imageTopContainer" style="display:${pdict.topPicDisplay};text-align:${pdict.imageTopAlign};">
+        <source srcset="${pdict.image1.src.desktop}" media="(min-width: 768px)"/>
+        <img style="height:${pdict.imageHeight};width:${pdict.imageWidth};border-radius:${pdict.imgBorderRadius}; --focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image1.focalPointY};" src="${pdict.image1.src.desktop}" <isif condition="${pdict.image1.alt}">alt="${pdict.image1.alt}" title="${pdict.image1.alt}"</isif> />
+
+        <!--img style="height:${pdict.imageHeight};width:${pdict.imageWidth};border-radius:${pdict.imgBorderRadius}" alt="image" src="${pdict.image1URL}"/-->
+        <img style="display:${pdict.pic2Display};height:${pdict.imageHeight};width:${pdict.imageWidth};" alt="image" src="${pdict.image2URL}"/>
+        <img style="display:${pdict.pic3Display};height:${pdict.imageHeight};width:${pdict.imageWidth};" alt="image" src="${pdict.image3URL}"/>
+    </div>
+
+    <div class="richText" style="display:${pdict.textDisplay};font-size:${pdict.textSize};font-weight:${pdict.textFontWeight};color:${pdict.textColour};padding:1rem 0;text-align:${pdict.textAlign}">
+        <${pdict.textHeaderType} style="display:${pdict.textDisplayHeader};">
+            ${pdict.textHeader}
+        </${pdict.textHeaderType}>
+        <div class="tibTextBody" style="display:${pdict.textDisplayBody}">
+            <isprint value="${pdict.textBody}" encoding="off"/>
+        </div>
+    </div>
+
+    <div style="display:${pdict.middlePicDisplay};text-align:center;padding-top:2rem">
+        <source srcset="${pdict.image1.src.desktop}" media="(min-width: 768px)"/>
+        <img style="height:${pdict.imageHeight};width:${pdict.imageWidth};border-radius:${pdict.imgBorderRadius}; --focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image1.focalPointY};" src="${pdict.image1.src.desktop}" <isif condition="${pdict.image1.alt}">alt="${pdict.image1.alt}" title="${pdict.image1.alt}"</isif> />
+        <!--img class="${pdict.imageClass}" style="height:${pdict.imageHeight};width:${pdict.imageWidth};" alt="image" src="${pdict.image1URL}"/-->
+        <img class="${pdict.imageClass}" style="display:${pdict.pic2Display};height:${pdict.imageHeight};width:${pdict.imageWidth};" alt="image" src="${pdict.image2URL}"/>
+        <img class="${pdict.imageClass}" style="display:${pdict.pic3Display};height:${pdict.imageHeight};width:${pdict.imageWidth};" alt="image" src="${pdict.image3URL}"/>
+    </div>
+
+    <div style="display:${pdict.buttonDisplay};">
+        <a href="{${pdict.buttonURL}}">
+            <div class="btn" style="text-align:${pdict.buttonAlign};border-radius:${pdict.buttonBorderRad};border:${pdict.buttonBorder};background-color:${pdict.buttonColour};font-size:${pdict.buttonTextSize};color:${pdict.buttonTextColour};padding:${pdict.buttonPadding}">
+                ${pdict.buttonText}
+            </div> 
+        </a>   
+    </div>
+</div>

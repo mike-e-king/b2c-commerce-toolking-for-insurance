@@ -1,0 +1,23 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/recipeMiniCard.css');
+</isscript>
+
+<a href="${pdict.linkDetails}">
+    <div class="rMCContainer">
+        <div class="recipeMiniImageContainer">
+            <source srcset="${pdict.image.src.desktop}" media="(min-width: 768px)"/>
+            <img class="recipeMiniImage" style="--focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image.focalPointY};" src="${pdict.image.src.desktop}" <isif condition="${pdict.image.alt}">alt="${pdict.image.alt}" title="${pdict.image.alt}"</isif> />
+        </div>
+
+        <div class="recipeMiniText" style="font-family:${pdict.textFont};">
+            <h3>
+                <isprint value="${pdict.recipeTitle}" encoding="off"/>
+            </h3>
+            <div >
+                <img class="recipeIconTime" src="${URLUtils.staticURL('/images/clock.svg')}" alt="Time" height="28px" width="28px"/>
+                Ready in <isprint value="${pdict.recipeTime}" encoding="off"/>
+            </div>
+        </div>
+    </div>
+</a>

@@ -1,0 +1,97 @@
+<div class="card">
+    <isif condition="${pdict.accountlanding}">
+        <div class="card-header clearfix">
+            <h2 class="pull-left">${Resource.msg('label.myassets','asset',null)}</h2>
+            <a href="${URLUtils.url('Order-History')}" class="pull-right"  aria-label="${Resource.msg('label.myassets.view','asset',null)}">${Resource.msg('label.myassets.view','asset',null)}</a>
+        </div>
+    <iselse/>
+        <div class="card-header clearfix">
+            <h3 class="pull-left">${Resource.msg('label.myassets.mynumber','asset',null)} ${order.orderNumber}</h3>
+            <a href="${URLUtils.url('Order-Details', 'orderID', order.orderNumber, 'orderFilter', pdict.orderFilter)}" class="pull-right" aria-label="${Resource.msgf('label.orderhistory.vieworderdetails', 'account', null, order.orderNumber)}">${Resource.msg('link.view','account',null)}</a>
+        </div>
+    </isif>
+    <div class="card-body card-info-group">
+        <div class="row">
+
+            <!--- Phone --->
+            <div class="col-4 hidden-xs-down">
+                <img class="img-fluid" src="/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/images/homepage/1-billpay@2x.png" alt="${Resource.msg('label.myassets.phone.title','asset',null)}" title="${Resource.msg('label.myassets.phone.title','asset',null)}">
+            </div>
+            <div class="col-sm-8 col-12">
+                <isif condition="${pdict.accountlanding}">
+                    <p>${Resource.msg('label.myassets.phone.number','asset',null)} <isprint value="${pdict.account.profile.phone}"/></p>
+                </isif>
+                <p>${Resource.msg('label.myassets.phone.plan','asset',null)} Mega Unlimited</p>
+                <p>${Resource.msg('label.myassets.phone.upgrade','asset',null)} <isprint value="${order.creationDate}"/></p>
+                <p>${Resource.msg('label.myassets.phone.latestbill','asset',null)} <isprint value="${order.priceTotal}"/></p>
+                <!--- <p>${Resource.msg('label.orderhistory.orderstatus','account',null)} <span class="dashboard-order-card-status">${order.orderStatus}</span></p> --->
+            </div>
+
+            <!--- TV --->
+            <div class="col-4 hidden-xs-down">
+                <img class="img-fluid" src="/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/images/homepage/4-tv@2x.png" alt="${Resource.msg('label.myassets.tv.title','asset',null)}" title="${Resource.msg('label.myassets.tv.title','asset',null)}">
+            </div>
+            <div class="col-sm-8 col-12">
+                <isif condition="${pdict.accountlanding}">
+                    <p>${Resource.msg('label.myassets.tv.account','asset',null)} 376586394</p>
+                </isif>
+                <p>${Resource.msg('label.myassets.tv.cardnumber','asset',null)} 134509884</p>
+                <p>${Resource.msg('label.myassets.tv.package','asset',null)} <span class="dashboard-order-card-status">Family Plus</span></p>
+                <!--- <isinclude template="account/order/shippingTitle"/> --->
+            </div>
+
+            <!--- Internet --->
+            <div class="col-4 hidden-xs-down">
+                <img class="img-fluid" src="/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/images/homepage/3-broadband@2x.png" alt="${Resource.msg('label.myassets.broadband.title','asset',null)}" title="${Resource.msg('label.myassets.broadband.title','asset',null)}">
+            </div>
+            <div class="col-sm-8 col-12">
+                <isif condition="${pdict.accountlanding}">
+                    <p>${Resource.msg('label.orderhistory.ordernumber','account',null)} <isprint value="${order.orderNumber}"/></p>
+                </isif>
+                <p>${Resource.msg('label.orderhistory.dateordered','account',null)} <isprint value="${order.creationDate}"/></p>
+                <p>${Resource.msg('label.orderhistory.orderstatus','account',null)} <span class="dashboard-order-card-status">${order.orderStatus}</span></p>
+                <isinclude template="account/order/shippingTitle"/>
+            </div>
+
+
+
+            
+            
+            <iscomment> 
+            <isif condition="${pdict.accountlanding}">
+                <div class="col-12">
+                   ${Resource.msg('label.myassets.mynumbers','asset',null)}
+                </div>
+            </isif>
+            <div class="col-sm-12 col-12">
+                <isif condition="${pdict.accountlanding}">
+                    <p>${pdict.account.profile.phone} -  <a href=""> ${Resource.msg('label.myassets.viewusage','asset',null)} </a> | 
+                    <a href=""> ${Resource.msg('label.myassets.checkupgrade','asset',null)} </a> </p>
+                </isif>
+            </div> 
+
+            <div class="col-sm-4 col-4">
+                <div class="text-center">
+                    <img src="/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dwceb88ada/images/homepage/2-payg@2x.png" width="120px"><br />
+                    Pay As You Go<br />
+                    ${pdict.account.profile.phone}
+                </div>
+            </div>            
+            <div class="col-sm-4 col-4">
+                <div class="text-center">
+                    <img src="/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dwceb88ada/images/homepage/4-tv@2x.png" width="120px"><br />
+                    Pay As You Go<br />
+                    ${pdict.account.profile.phone}
+                </div>
+            </div>
+            <div class="col-sm-4 col-4">
+                <div class="text-center">
+                    <img src="/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dwceb88ada/images/homepage/2-payg@2x.png" width="120px"><br />
+                    Pay As You Go<br />
+                    ${pdict.account.profile.phone}
+                </div>
+            </div></iscomment>
+
+        </div>
+    </div>
+</div>

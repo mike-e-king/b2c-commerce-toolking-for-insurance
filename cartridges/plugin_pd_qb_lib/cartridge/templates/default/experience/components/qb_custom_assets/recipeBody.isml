@@ -1,0 +1,25 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/recipe.css');
+    assets.addJs('/js/recipe.js');
+</isscript>
+
+<div class="container">
+    <div class="rBContainer" style="font-family:${pdict.textFont};">
+        <div class="recipeMethodIngr" style="text-align:${pdict.textAlign};">
+            <div class="ingrList" >
+                <h4>Ingredients</h4>
+                <isprint value="${pdict.ingredients}" encoding="off"/>
+            </div>
+            <div class="method">
+                <h4>Method</h4>
+                <isprint value="${pdict.method}" encoding="off"/>
+            </div>
+        </div>
+
+        <div class="recipeActions">
+            <button class="recipeBtn printRecipe" onclick="printRecipe()">Print recipe</button>
+            <button class="recipeBtn copyRecipe">Copy recipe</button>
+        </div>
+    </div>
+</div>

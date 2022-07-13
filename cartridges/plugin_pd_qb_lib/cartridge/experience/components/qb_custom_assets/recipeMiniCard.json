@@ -1,0 +1,56 @@
+{
+    "name": "Recipe Mini Card",
+    "description": "Component for the displaying a mini card of a recipe to link to full recipe",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "image__details",
+            "name": "Image Details",
+            "attribute_definitions": [
+                {
+                    "id": "image",
+                    "name": "Image",
+                    "type": "image",
+                    "required": true
+                }
+            ] 
+        },
+        {
+            "id": "text__details",
+            "name": "Text Details",
+            "attribute_definitions": [
+                {
+                    "id": "recipe_title",
+                    "name": "Recipe Title",
+                    "type": "markup",
+                    "required": true
+                },
+                {
+                    "id": "recipe_time",
+                    "name": "Cooking Time",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "text_font",
+                    "name": "Text Font",
+                    "type": "string",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": "link__details",
+            "name": "Link Details",
+            "attribute_definitions": [
+                {
+                    "id": "link",
+                    "name": "Recipe Link",
+                    "type": "url",
+                    "required": false
+                }
+            ] 
+        }
+    ],
+    "region_definitions": []
+}

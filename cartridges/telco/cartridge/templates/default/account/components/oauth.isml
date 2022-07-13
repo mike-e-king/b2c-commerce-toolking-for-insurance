@@ -1,0 +1,38 @@
+<iscomment> ===== Demo Social Login to My Account ===== </iscomment>
+<script>
+function submitForm(){
+    $('login-form1').submit();
+}
+</script>
+
+<form action="${pdict.actionUrl}" class="login" method="POST" name="login-form1">
+
+<input type="hidden" id="login-form-email" required aria-required="true" class="form-control required" aria-describedby="form-email-error" name="loginEmail" value="fred@xaebo.com">
+<input type="hidden" id="login-form-password" required aria-required="true" class="form-control required" aria-describedby="form-password-error" name="loginPassword" value="Password123$$">
+<input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
+
+    <div class="form-group">
+     <button type="submit" class="btn btn-block btn-secondary oauth-salesforce">
+     <i class="fa fa-salesforce" aria-hidden="true"></i>
+                ${Resource.msg('button.text.oauth.salesforce', 'login', null)}     
+     </div>
+</form>
+
+
+<form action="" class="login-oauth" method="post" name="login-oauth-form">
+    <div class="form-group">
+        <a href="${URLUtils.https('Login-OAuthLogin', 'oauthProvider', 'Google', 'oauthLoginTargetEndPoint', pdict.oAuthReentryEndpoint)}" class="btn btn-block btn-outline-primary oauth-google"
+           role="button" aria-pressed="true">
+            <i class="fa fa-google" aria-hidden="true"></i>
+            ${Resource.msg('button.text.oauth.google', 'login', null)}
+        </a>
+    </div>
+
+    <div class="form-group">
+        <a href="${URLUtils.https('Login-OAuthLogin', 'oauthProvider', 'Facebook', 'oauthLoginTargetEndPoint', pdict.oAuthReentryEndpoint)}" class="btn btn-block btn-outline-primary oauth-facebook"
+           role="button" aria-pressed="true">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                ${Resource.msg('button.text.oauth.facebook', 'login', null)}
+        </a>
+    </div>
+</form>

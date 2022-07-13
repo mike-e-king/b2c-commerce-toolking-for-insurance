@@ -1,0 +1,20 @@
+<isdecorate template="common/layout/page">
+    <div role="main" id="maincontent">
+        <div class="container">
+            <div class="hero slant-down contact-us-banner">
+                <h1 class="page-title">SFI Omniscripts available</h1>
+            </div>
+            <div class="row">
+                <isif condition="${pdict.scripts && pdict.scripts.length}">
+                    <ul>
+                        <isloop items="${pdict.scripts}" var="script">
+                            <li><a href="${URLUtils.url('Page-Show', 'cid', script.ID)}">${script.name}</a></li>
+                        </isloop>
+                    </ul>
+                    <iselse>
+                        <p>No Scripts available</p>
+                </isif>
+            </div>
+        </div>
+    </div>
+</isdecorate>

@@ -1,0 +1,45 @@
+{
+    "name": "Recipe Body",
+    "description": "Component for the Ingredients and Method sections of a recipe",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "text__details",
+            "name": "Text Details",
+            "attribute_definitions": [
+                {
+                    "id": "ingredients",
+                    "name": "Ingredients",
+                    "type": "markup",
+                    "required": true
+                },
+                {
+                    "id": "method",
+                    "name": "Method",
+                    "type": "markup",
+                    "required": true
+                },
+                {
+                    "id": "text_font",
+                    "name": "Text Font",
+                    "type": "string",
+                    "required": false
+                },
+                {
+                    "id": "text_align",
+                    "name": "Text Alignment",
+                    "description": "Defaults to left",
+                    "type": "enum",
+                    "values": [
+                        "Left",
+                        "Center",
+                        "Right"
+                    ],
+                    "default_value": "Left",
+                    "required": false
+                }
+            ]
+        }
+    ],
+    "region_definitions": []
+}

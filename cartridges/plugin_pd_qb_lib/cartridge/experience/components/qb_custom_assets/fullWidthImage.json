@@ -1,0 +1,21 @@
+{
+    "name": "Full Width Image",
+    "description": "Component to display an image with full width of the page",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "image_detail",
+        "name": "Image Details",
+        "attribute_definitions": [
+          {
+            "id": "image",
+            "name": "Image",
+            "type": "image",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "region_definitions": []
+  }
+  

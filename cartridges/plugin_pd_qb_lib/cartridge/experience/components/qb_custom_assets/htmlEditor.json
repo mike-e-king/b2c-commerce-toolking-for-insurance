@@ -1,0 +1,21 @@
+{
+    "name": "HTML Editor",
+    "description": "Component to input raw HTML to a page",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "html_detail",
+        "name": "HTML Details",
+        "attribute_definitions": [
+          {
+            "id": "html_input",
+            "name": "HTML Input",
+            "type": "text",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "region_definitions": []
+}
+  

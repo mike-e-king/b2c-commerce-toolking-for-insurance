@@ -1,0 +1,113 @@
+{
+    "name": "Appointment Booker",
+    "description": "Component to mock up Appointment Booking",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "booker_styling",
+        "name": "Booker Styling",
+        "description": "Options to change the colours and font of the component, but is not mandatory",
+        "attribute_definitions": [
+          {
+            "id": "text_font",
+            "name": "Font",
+            "type": "text",
+            "description": "Defaults to Raleway",
+            "required": false
+          },
+          {
+            "id": "text_colour",
+            "name": "Main Text Colour",
+            "type": "text",
+            "description": "Defaults to black",
+            "required": false
+          },
+          {
+            "id": "date_passed_colour",
+            "name": "Dates in the Past Text Colour",
+            "type": "text",
+            "description": "Defaults to #c9c9c9- should be a faded version of the Main Text Colour",
+            "required": false
+          },
+          {
+            "id": "bg_colour",
+            "name": "Background Colour",
+            "type": "text",
+            "description": "Defaults to white",
+            "required": false
+          },
+          {
+            "id": "head_colour",
+            "name": "Header Colour",
+            "type": "text",
+            "description": "Defaults to rgba(0,0,0,.03)",
+            "required": false
+          },
+          {
+            "id": "days_text_colour",
+            "name": "Days Header Text Colour",
+            "type": "text",
+            "description": "Defaults to #777777",
+            "required": false
+          },
+          {
+            "id": "date_colour",
+            "name": "Date Background Colour",
+            "type": "text",
+            "description": "Defaults to rgba(0,0,0,.03)",
+            "required": false
+          },
+          {
+            "id": "selected_date_colour",
+            "name": "Selected Date Background Colour",
+            "type": "text",
+            "description": "Defaults to #b9b7b7",
+            "required": false
+          },
+          {
+            "id": "selected_date_text_colour",
+            "name": "Selected Date Text Colour",
+            "type": "text",
+            "description": "Defaults to white- ensure this is a contrasting colour to Selected Date Background Colour",
+            "required": false
+          },
+          {
+            "id": "button_colour",
+            "name": "Button Colour",
+            "type": "text",
+            "description": "Defaults to rgba(0,0,0,.03)",
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": "booker_text",
+        "name": "Booker Text",
+        "description": "Options to change the text on the component",
+        "attribute_definitions": [
+          {
+            "id": "open_cal_button_text",
+            "name": "Book appointment button text",
+            "type": "text",
+            "description": "Defaults to Book Appointment",
+            "required": false
+          },
+          {
+            "id": "confirm_text_1",
+            "name": "Confirmation message text before date displayed",
+            "type": "text",
+            "description": "Defaults to 'Thank you, your appointment has been booked for'",
+            "required": false
+          },
+          {
+            "id": "confirm_text_2",
+            "name": "Confirmation message text after date displayed",
+            "type": "text",
+            "description": "Defaults to 'We will send you a confirmation email shortly. We look forward to seeing you.'",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "region_definitions": []
+  }

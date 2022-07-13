@@ -1,0 +1,41 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/instagramTiles.css');
+</isscript>
+
+<div class="headerText" style="display:${pdict.displayHeader}">
+    <div class="headerTitle">
+        <h3> <span><isprint value="${pdict.hashtag}" encoding="off"/></span></h3>
+        <img class="instaLogo" src="${URLUtils.staticURL('/images/instaLogo.png')}" alt="instagramLogo" />
+    </div>
+    <p> Follow us on <span style="color:${pdict.highlightColour}"> ${pdict.instaProfile}</span> and share your experiences for a chance to be featured</p>
+    
+</div>
+
+<a href="${pdict.linkUrl}">
+    <div class="tilesContainer">
+        <div class="colGroup1">
+            <div class="col1">
+                <img alt="image" src="${pdict.image1}"/>
+            </div>
+            <div class="col2">
+                <img alt="image" src="${pdict.image2}"/>
+            </div>
+        </div>
+        <div class="colGroup2">
+            <div class="col3">
+                <img class="stackedImg" alt="image3" src="${pdict.image3}"/>
+                <img class="stackedImg" alt="image4" src="${pdict.image4}"/>
+            </div>
+            <div class="col4">
+                <img class="stackedImg" alt="image5" src="${pdict.image5}"/>
+                <img class="stackedImg" alt="image6" src="${pdict.image6}"/>
+            </div>
+        </div>
+        <div class="colGroup3">
+            <div class="col5">
+                <img alt="image" src="${pdict.image7}"/>
+            </div>
+        </div>
+    </div>
+</a>

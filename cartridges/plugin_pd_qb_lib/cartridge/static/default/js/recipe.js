@@ -1,0 +1,3 @@
+function printRecipe(){
+    window.print();
+}

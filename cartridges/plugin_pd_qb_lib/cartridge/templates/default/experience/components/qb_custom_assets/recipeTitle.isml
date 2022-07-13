@@ -1,0 +1,31 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/recipe.css');
+</isscript>
+
+<div class="container rTContainer">
+    <div class="recipeImageContainer">
+        <source srcset="${pdict.image.src.desktop}" media="(min-width: 768px)"/>
+        <img class="recipeImage" style="--focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image.focalPointY};" src="${pdict.image.src.desktop}" <isif condition="${pdict.image.alt}">alt="${pdict.image.alt}" title="${pdict.image.alt}"</isif> />
+    </div>
+
+    <div class="recipeText" style="font-family:${pdict.textFont};text-align:${pdict.textAlign}">
+        <h2>
+            <isprint value="${pdict.recipeTitle}" encoding="off"/>
+        </h2>
+        <div class="recipeDesc">
+            <isprint value="${pdict.recipeDescr}" encoding="off"/>
+        </div>
+        <div >
+            <span class="recipeIcons">
+                <img class="recipeIconFeed" src="${URLUtils.staticURL('/images/person.svg')}" alt="Feeds" height="28px" width="28px"/>
+                Feeds <isprint value="${pdict.recipeFeeds}" encoding="off"/>
+            </span>
+            <span class="recipeIcons">
+                <img class="recipeIconTime" src="${URLUtils.staticURL('/images/clock.svg')}" alt="Time" height="28px" width="28px"/>
+                Ready in <isprint value="${pdict.recipeTime}" encoding="off"/>
+            </span>
+        </div>
+    </div>
+
+</div>

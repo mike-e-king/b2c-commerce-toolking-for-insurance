@@ -1,0 +1,26 @@
+{
+  "name": "Spacer Row",
+  "group": "qb_custom_layouts",
+  "attribute_definition_groups": [
+    {
+      "id": "spacer_details",
+      "name": "Spacer Details",
+      "attribute_definitions": [
+        {
+          "id": "height",
+          "name": "Spacer Height",
+          "type": "string",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "region_definitions": [
+      {
+        "id":"column1",
+        "name":"Column 1",
+        "max_components":1,
+        "component_type_exclusions": []
+      }
+  ]
+}

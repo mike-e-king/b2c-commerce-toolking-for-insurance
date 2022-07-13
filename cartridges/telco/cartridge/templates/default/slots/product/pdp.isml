@@ -1,0 +1,14 @@
+<isif condition="${slotcontent}">
+    <hr />
+
+    <div class="recommendations">
+    <h2>${Resource.msg('label.recommendations', 'product', null)}</h2>
+        <div class="row">
+            <iscomment> <h2 class="col-sm-12 col-md-4 col-lg-3 title">${Resource.msg('label.recommendations', 'product', null)}</h2> </iscomment>
+            <div class="col-sm-12 col-md-12 col-lg-12 value content">
+                <isset name="end" value="${3}" scope="page" />
+                <isinclude template="components/productrecs" />
+            </div>
+        </div>
+    </div>
+</isif>

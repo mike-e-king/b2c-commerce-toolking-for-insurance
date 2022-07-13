@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    
+    <type-extension type-id="ServiceCredential">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="vlocity_cmt_ClientId">
+                <display-name xml:lang="x-default">Consumer Key</display-name>
+                <description xml:lang="x-default">Represents the Consumer Key associated to the Connected App in Vlocity.</description>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="vlocity_cmt_ClientSecret">
+                <display-name xml:lang="x-default">Consumer Secret</display-name>
+                <description xml:lang="x-default">Represents the Consumer Secret associated to the Connected App in Vlocity.</description>
+                <type>password</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="VlocityConnectorAttributes">
+                <display-name xml:lang="x-default">Vlocity Connector Attributes</display-name>
+                <attribute attribute-id="vlocity_cmt_ClientId"/>
+                <attribute attribute-id="vlocity_cmt_ClientSecret"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+</metadata>

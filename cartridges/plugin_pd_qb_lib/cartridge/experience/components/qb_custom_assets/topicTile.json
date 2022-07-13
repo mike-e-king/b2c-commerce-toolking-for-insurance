@@ -1,0 +1,117 @@
+{
+    "name": "Topic Tile",
+    "description": "Topic tile",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "text__details",
+        "name": "Text Details",
+        "attribute_definitions": [
+            {
+                "id": "text",
+                "name": "Text",
+                "type": "text",
+                "required": false
+            },
+            {
+                "id": "text_colour",
+                "name": "Text Colour",
+                "description": "Defaults to body default colour",
+                "type": "custom",
+                "required": false,
+                "editor_definition": {
+                    "type": "themer.colorpicker"
+                }
+            },
+            {
+                "id": "text_bg_colour",
+                "name": "Text Background Colour",
+                "type": "custom",
+                "required": false,
+                "editor_definition": {
+                    "type": "themer.colorpicker"
+                }
+            },
+            {
+                "id": "text_bg_hov_colour",
+                "name": "Text Background Hover Colour",
+                "type": "custom",
+                "required": false,
+                "editor_definition": {
+                    "type": "themer.colorpicker"
+                }
+            },
+            {
+                "id": "text_size",
+                "name": "Text Size",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "text_align",
+                "name": "Text Alignment",
+                "description": "Defaults to center",
+                "type": "enum",
+                "values": [
+                    "Left",
+                    "Center",
+                    "Right"
+                ],
+                "default_value": "Center",
+                "required": false
+            },{
+                "id": "text_pad",
+                "name": "Text Padding",
+                "type": "string",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "link__details",
+        "name": "Link Details",
+        "attribute_definitions": [
+            {
+                "id": "link_url",
+                "name": "Link",
+                "type": "url",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "image__details",
+        "name": "Image Details",
+        "attribute_definitions": [
+            {
+                "id": "image",
+                "name": "Image",
+                "type": "image",
+                "required": true
+            },
+            {
+                "id": "image_width",
+                "name": "Image Width",
+                "type": "string",
+                "required": false
+            },
+            {
+                "id": "image_bg",
+                "name": "Image Tile Background Colour",
+                "type": "custom",
+                "required": false,
+                "editor_definition": {
+                    "type": "themer.colorpicker"
+                }
+            },
+            {
+                "id": "img_pad",
+                "name": "Image Padding",
+                "type": "string",
+                "required": false
+            }
+        ]
+      }
+    ],
+    "region_definitions": []
+}

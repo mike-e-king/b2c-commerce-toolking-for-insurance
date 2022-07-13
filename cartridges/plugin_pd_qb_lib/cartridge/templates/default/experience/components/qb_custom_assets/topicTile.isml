@@ -1,0 +1,27 @@
+<style>
+    .topicTileLink:hover {
+        text-decoration: none;
+    }
+    
+    .topicText:hover {
+        background-color: ${pdict.textBgHovColour} !important;
+    }
+</style>
+
+<a class="topicTileLink" href="${pdict.linkUrl}">
+    <div class="topicText" style="
+                background-color: ${pdict.textBgColour};
+                font-size:${pdict.textSize};
+                color:${pdict.textColour};
+                padding:${pdict.textPad};
+                text-align: ${pdict.textAlign};">
+        <isprint value="${pdict.text}" encoding="off"/>
+    </div>
+    <div class="ttContainer" style="
+                                    background-color:${pdict.imageBg};
+                                    text-align:center;
+                                    padding:${pdict.imgPad};">
+        <source srcset="${pdict.image.src.desktop}" media="(min-width: 768px)"/>
+        <img style="width:${pdict.imageWidth};--focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image.focalPointY};" src="${pdict.image.src.desktop}" <isif condition="${pdict.image.alt}">alt="${pdict.image.alt}" title="${pdict.image.alt}"</isif> />
+    </div>
+</a>

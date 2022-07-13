@@ -1,0 +1,17 @@
+<style>
+    .fullWidth{
+        width: 100vw; 
+        margin-left: calc(50% - 50vw) !important; 
+        margin-right: calc(50% - 50vw) !important; 
+        max-width: 100vw; 
+        border: none;   
+    }
+
+    .fullWidth .region.col-12.col-md-12.px-2 {
+        padding: 0 !important;
+    }
+</style>
+
+<div class="row mx-n2 fullWidth">
+	<isprint value="${pdict.regions.column1.setClassName("region col-12 col-md-12 px-2").render()}" encoding="off"/>
+</div>

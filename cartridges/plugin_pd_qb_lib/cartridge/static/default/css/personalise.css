@@ -1,0 +1,139 @@
+/* styles for personaliser component */
+
+.text-overlay{
+    position: absolute;
+}
+
+.personaliser-column{
+    padding: 4% 0 0 6%;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.image_column{
+    width: 50%;
+}
+
+/* Main component style*/
+.personaliser-main{
+    margin: 0% !important;
+    border: 1px solid #ccc;
+    max-width: 100%;
+}
+
+.personaliser-pad{
+    padding: 2%;
+}
+
+.personaliser-img{
+    margin-left: 3%;
+    max-width:100%;
+}
+
+.color-swatches{
+    padding: 3% 0 0 0;
+    margin-bottom: 0;
+    width: 14rem;
+}
+
+.color-swatch{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 1.25em;
+    border: .063em solid rgba(0,0,0,.3);
+    display: inline-block;
+    margin-right: .313em;
+    position: relative;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.clearStyle{
+    clear:both;
+}
+
+.enterText{
+    padding-top: 5%;
+}
+
+.infoText{
+    margin-top: 4%
+}
+
+.personalise-cart{
+    margin: 15% 0 0 8%;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.btn-marg{
+    margin-right: 5%;
+}
+
+.personalise-success{
+	color: darkgreen;
+    background-color: #c6ecc6;
+    width: 100%;
+    text-align: center;
+    margin: 0 20% 2% 20%;
+    padding: 1% 0;
+}
+
+.personaliser-error{
+    color: red;
+}
+
+.personalise-input{
+    border: 0.5px solid #cac8c8;
+    padding: 0.4rem;
+    margin: 0.8rem 0 0.5rem 0 !important;
+}
+
+/* set margin-top to -50% to offset the ":before {padding-top: calc(1 / 2 * 100%);}" on the standard components */
+.experience-component.experience-qb_custom_assets-personalise{
+    position:unset;
+    margin-top: -48%;
+}
+
+.region_portrait-small .experience-component.experience-qb_custom_assets-personalise{
+    margin-top: -200%;
+}
+
+.region_square .experience-component.experience-qb_custom_assets-personalise{
+    margin-top: -100%;
+}
+
+
+.region_square .personaliser-img {
+    margin-left: 7%;
+    /* TODO: 3 column adjustable with 
+    margin-top: 24%; */
+    margin-top: 0%;
+}
+
+.region_square .color-swatch {
+    width: 2rem;
+    height: 2rem;
+}
+
+.region_square .personalise-input {
+    max-width: 90%;
+}
+
+.region_portrait-small .personaliser-img {
+    margin-left: 9%;
+    margin-top: 37%;
+}
+
+.region_portrait-small .color-swatch {
+    width: 1rem;
+    height: 1rem;
+}
+
+.region_portrait-small .personalise-input {
+    max-width: 85%;
+}

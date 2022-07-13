@@ -1,0 +1,57 @@
+{
+    "name": "Product Recommendations",
+    "description": "Component to displaying 4 Products as Recommended",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "title__details",
+        "name": "Title Details",
+        "attribute_definitions": [
+            {
+                "id": "title",
+                "name": "Title",
+                "description": "RECOMMENDED FOR YOU",
+                "type": "text",
+                "required": false
+            }
+        ]
+      },
+      {
+        "id": "product__details",
+        "name": "Product Details",
+        "attribute_definitions": [
+            {
+                "id": "product1",
+                "name": "Product 1",
+                "type": "product",
+                "required": true
+            },
+            {
+                "id": "product2",
+                "name": "Product 2",
+                "type": "product",
+                "required": true
+            },
+            {
+                "id": "product3",
+                "name": "Product 3",
+                "type": "product",
+                "required": true
+            },
+            {
+                "id": "product4",
+                "name": "Product 4",
+                "type": "product",
+                "required": true
+            },
+            {
+                "id": "highlight_colour",
+                "name": "Highlight Colour",
+                "type": "string",
+                "required": false
+            }
+        ]
+      }
+    ],
+    "region_definitions": []
+}

@@ -1,0 +1,15 @@
+<style>
+    .fullWidthImage{
+        width: 100vw; 
+        margin-left: calc(50% - 50vw); 
+        margin-right: calc(50% - 50vw); 
+        max-width: 100vw; 
+        border: none;   
+    }
+</style>
+
+<div />
+    <source srcset="${pdict.image.src.desktop}" media="(min-width: 768px)"/>
+    <img class="fullWidthImage" style="--focal-point-x:${pdict.image.focalPointX}; --focal-point-y:${pdict.image.focalPointY};" src="${pdict.image.src.desktop}" <isif condition="${pdict.image.alt}">alt="${pdict.image.alt}" title="${pdict.image.alt}"</isif> />
+</div>
+

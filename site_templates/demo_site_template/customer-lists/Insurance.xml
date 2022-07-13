@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer-list xmlns="http://www.demandware.com/xml/impex/customer/2006-10-31" list-id="Insurance">
+    <header>
+        <customerno-sequence-enabled>false</customerno-sequence-enabled>
+        <customer-lockout-enabled>true</customer-lockout-enabled>
+        <max-failed-logins>10</max-failed-logins>
+        <lockout-effective-period>30</lockout-effective-period>
+        <customer-login-attempt-reset-time>30</customer-login-attempt-reset-time>
+        <min-password-length>8</min-password-length>
+        <min-password-special-chars>1</min-password-special-chars>
+        <force-password-contains-alpha>true</force-password-contains-alpha>
+        <force-password-contains-numeric>true</force-password-contains-numeric>
+        <force-password-mixed-case>true</force-password-mixed-case>
+        <max-password-age>365000</max-password-age>
+        <max-password-reset-token-age>30</max-password-reset-token-age>
+    </header>
+
+</customer-list>

@@ -1,0 +1,10 @@
+<isdecorate template="common/layout/page">
+
+    <div class="container">
+        <div class="row">
+            <iframe src="${URLUtils.url('Vlocity-OmniOutPage', 'sid', pdict.sid)}" style="width:100%;border:none;height:900px">
+            </iframe>
+        </div>
+    </div>
+
+</isdecorate>

@@ -1,0 +1,12 @@
+.rMCContainer {
+    margin: 1rem 0;
+    border: 1px solid #f3f3f3;
+}
+
+.recipeMiniImage {
+    width: 100%;
+}
+
+.recipeMiniText {
+    padding: 1.5rem;
+}

@@ -1,0 +1,29 @@
+.experience-qb_custom_assets-threeProductTile .product-group {
+    display: flex;
+    padding: 0 3% 4% 3%;
+}
+
+.experience-qb_custom_assets-threeProductTile .product-item {
+    width: 33%;
+    margin: 0 5px;
+    font-size: 0.75rem;
+    color: #333;
+}
+
+.experience-qb_custom_assets-threeProductTile img.productImg {
+    max-width: 100%;
+}
+
+.experience-qb_custom_assets-threeProductTile .productNaming {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.experience-qb_custom_assets-threeProductTile .productPricing {
+    color: red;
+    font-weight: 700;
+    padding: 6% 0;
+}

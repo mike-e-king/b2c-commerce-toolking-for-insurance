@@ -1,0 +1,26 @@
+{
+    "name": "Two Images Stacked",
+    "description": "Component to show two images vertically stacked",
+    "group": "qb_custom_assets",
+    "attribute_definition_groups": [
+      {
+        "id": "image__details",
+        "name": "Image Details",
+        "attribute_definitions": [
+            {
+                "id": "image_top",
+                "name": "Top Image",
+                "type": "image",
+                "required": true
+            },
+            {
+                "id": "image_bottom",
+                "name": "Bottom Image",
+                "type": "image",
+                "required": true
+            }
+        ]
+      }
+    ],
+    "region_definitions": []
+}

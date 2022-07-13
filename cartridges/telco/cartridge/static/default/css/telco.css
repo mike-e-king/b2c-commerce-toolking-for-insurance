@@ -1,0 +1,308 @@
+/** ----- EDIT COLOUR AND FONT VALUES HERE ----- **/
+:root{
+    --action-colour: #00C2BF;
+    --action-hover-colour: #008281;
+    --action-offset-colour: #ffffff;
+    --link-colour: #464444;
+    --text-colour: #464444;
+    --bg-colour: #ffffff;
+    --font-fam: Avenir;
+    --secondary-colour: #f2f2f3;
+    --header-bg-colour: #ffffff;
+    --header-text-colour: #464444;
+    --menu-bg-colour: #ffffff;
+    --menu-text-colour: #464444;
+    --footer-bg-colour: #ffffff;
+    --footer-text-colour: #464444;
+}
+
+/* -- Main body style -- */
+body{
+    color: var(--text-colour);
+    font-family: var(--font-fam);
+    background-color: var(--bg-colour);
+}
+
+.page {
+    background-color: var(--bg-colour);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-fam);
+}
+
+h1.page-title,
+h1.page-title:before {
+    color: var(--text-colour);
+    background-color: rgba(242,242,243,0.6);
+}
+
+.slant-down:after, 
+.slant-up:after{
+    display:none;
+}
+
+.embedded-service .fab {
+    background-color: var(--action-colour) !important;
+}
+
+.embedded-service .fab div[class="icon_fab_container"] > svg.esw-default_icon {
+    fill: var(--action-offset-colour) !important;
+}
+
+/* -- Header -- */
+.header-banner {
+    background-color: var(--secondary-colour);
+    color: var(--text-colour);
+}
+
+.header-banner .close-button .close {
+    color: var(--text-colour);
+    background-color: var(--secondary-colour);
+}
+
+nav{
+    background-color: var(--header-bg-colour);
+}
+
+.main-menu{
+    background-color: var(--menu-bg-colour);
+}
+
+.nav-item>.nav-link {
+    color: var(--menu-text-colour);
+}
+
+.minicart .minicart-quantity {
+    background-color: var(--action-colour);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+}
+
+.minicart .minicart-icon{
+    color: var(--header-text-colour);
+}
+
+/* for shopping cart icon instead of shopping bag */
+/*.fa-shopping-bag:before {
+    content: "\F07A";
+}*/
+
+/* -- Footer --*/
+footer,
+footer .back-to-top i.fa-arrow-up,
+footer a {
+    background-color: var(--footer-bg-colour);
+    color: var(--footer-text-colour);
+    border-top: 1px solid #e4e4e4;
+}
+
+footer .footer-container .footer-item.collapsible-xs button{
+    font-family: var(--font-fam);
+    color: var(--footer-text-colour);
+}
+
+.home-email-signup {
+    background-color: var(--footer-bg-colour) !important;
+}
+
+.home-email-signup .email-description {
+    color: var(--footer-text-colour) !important;
+}
+
+/* -- Buttons and Links -- */
+
+.btn-primary,
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: var(--action-offset-colour);
+    background-color: var(--action-colour);
+    border-color: var(--action-colour);
+}
+
+.btn-primary:hover {
+    color: var(--action-offset-colour);
+    background-color: var(--action-hover-colour);
+    border-color: var(--action-hover-colour);
+}
+
+.btn-outline-primary,
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: var(--action-colour);
+    border-color: var(--action-colour);
+    background-color: #fff;
+}
+
+.btn-outline-primary:hover {
+    color: var(--action-hover-colour);
+    border-color: var(--action-hover-colour);
+    background-color: #fff;
+}
+
+.btn-primary.disabled, 
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #96c7c7;
+    border-color: #96c7c7;
+}
+
+a.btn.btn-primary.btn-block.checkout-btn,
+button.add-to-cart.btn.btn-primary {
+    background-color: var(--action-colour);
+    border-color: var(--action-colour);
+}
+
+a{
+    color: var(--link-colour);
+}
+
+a.normal{
+    color: var(--link-colour);
+}
+
+.user.hidden-md-down,
+.user.hidden-md-down a,
+span#dropdownCountrySelector {
+    color: var(--header-text-colour);
+}
+
+.navbar-header .user .popover {
+    background-color: var(--header-bg-colour);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--text-colour);
+    background-color: var(--action-colour);
+}
+
+.refinements ul li button{
+    color: var(--text-colour);
+}
+
+button.fa.fa-search {
+    color: var(--text-colour);
+}
+
+header~#maincontent .container a:not(.btn-primary):not(.btn-outline-primary){
+    color: var(--text-colour);
+}
+
+.btn-add-new, 
+.btn-show-details, 
+.edit-button {
+    color: var(--action-colour) !important;
+}
+
+.info-icon .icon {
+    background-color: var(--action-colour);
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: .188em solid var(--action-colour);
+}
+
+/* -- PD Styles -- */
+.tibTextBody {
+    padding-top: 1rem;
+}
+
+/* -- Bundle Styling -- */
+.row.product-main {
+    border: none;
+    box-shadow: none;
+}
+
+.leaf {
+    border: none;
+    box-shadow: none;
+    padding: 0.8rem 1rem;
+    margin: 0;
+}
+
+.col-12.children {
+    padding-bottom: 1rem;
+}
+
+/* -- Responsive displays -- */
+.onlyMobile{
+    display: none;
+}
+
+.onlyDesktop{
+    display: block;
+}
+
+.flexDisp{
+    display: flex;
+}
+
+/* -- Override storePage.css on PD pages -- */
+@media (min-width: 769px) {
+    html {
+        font-size:1rem
+    }
+}
+
+/* -- desktop styling -- */
+@media (min-width: 991.99px){
+    .brand{
+        position: unset;
+        left: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    nav.navbar.navbar-expand-md.bg-inverse.col-12 {
+        padding: 1.1rem 0 0 2rem;
+    }
+
+    .navbar-header {
+        height: 5rem;
+    }
+    
+    .navbar-header .country-selector, .navbar-header .minicart, .navbar-header .search, .navbar-header .user {
+        margin: 1.45em 0 0 .5em;
+    }
+
+    #telco-home .product-tile-pd .product-tile-image .product-tile-component-figure, .product-tile-pd .product-tile-image .product-tile-component-image {
+        width: 80%;
+    }
+
+    #telco-home .product-tile-image,
+    .product-tile-body {
+        text-align: center;
+    }
+
+    #telco-home .experience-commerce_assets-productTile .ratings.col-xs-12.col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0.5rem 0;
+    }
+}
+
+@media (max-width: 991.98px){
+
+    .onlyMobile{
+        display: block;
+    }
+
+    .onlyDesktop{
+        display: none;
+    }
+
+    .brand {
+        width: 7em;
+        margin-left: -4em;
+    }
+
+    .ibtoContainer .richText{
+        margin: 1rem 0 0 0 !important;
+    }
+}
+
+
+ /* ==== Kieran Mods ==== */
+ /* -- Reduce width of search field on Desktop -- */
+@media (min-width: 1200px) {
+    .site-search {
+        width: 15em;
+    }
+}

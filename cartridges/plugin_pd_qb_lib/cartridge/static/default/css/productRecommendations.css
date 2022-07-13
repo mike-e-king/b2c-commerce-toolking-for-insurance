@@ -1,0 +1,45 @@
+.experience-qb_custom_assets-productRecommendations .product-group {
+    display: flex;
+    padding-bottom: 4rem;
+}
+
+.experience-qb_custom_assets-productRecommendations .product-item {
+    margin-left: 2rem;
+    padding: 1.5rem 3rem;
+    border: 1px solid #bbc;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(207,205,207,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(207,205,207,1);
+    box-shadow: 5px 5px 5px 0px rgba(207,205,207,1);
+}
+
+.experience-qb_custom_assets-productRecommendations img.productImg {
+    max-width: 100%;
+}
+
+.productRecTitle{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.experience-qb_custom_assets-productRecommendations .productRec1{
+    margin-left:0;
+}
+
+.experience-qb_custom_assets-productRecommendations a:hover{
+    text-decoration: none;
+}
+
+.experience-qb_custom_assets-productRecommendations h3 {
+    border-bottom: 1px solid #bbc; 
+    line-height: 0.1em;
+}
+
+.experience-qb_custom_assets-productRecommendations h3 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.productRec1Link{
+    width: 40%;
+}
